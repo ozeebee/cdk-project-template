@@ -1,0 +1,17 @@
+{
+  "name": "nodejs",
+  "version": "1.0.1",
+  "description": "layer for lambda",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-sfn": "^3.30.0"
+  },
+  "devDependencies": {
+    "@types/node": "10.17.27"
+  }
+}

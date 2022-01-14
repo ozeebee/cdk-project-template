@@ -1,0 +1,14 @@
+.DS_Store
+*.js
+!jest.config.js
+*.d.ts
+node_modules
+
+# CDK asset staging directory
+.cdk.staging
+cdk.out
+cdk-outputs.json
+
+# IDE configs are personal and should not be put in SCM
+.vscode
+.idea
