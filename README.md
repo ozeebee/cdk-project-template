@@ -24,10 +24,15 @@ It cannnot install template dependencies; that's why we use the [`ozeebee/caz`](
 ## Usage
 
 ```
-npx ozeebee/caz ozeebee/cdk-project-template [project-name]
+npx ozeebee/caz ozeebee/cdk-project-template [project-name] --tpldeps
 ```
 
 Then follow the instructions ;)
+
+## Building & Publishing
+
+1. Build the project (transpile TypeScript to JavaScript): `npm run build`
+2. Commit & Push to the **master** branch (required by caz)
 
 ## Built With
 
