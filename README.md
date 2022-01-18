@@ -14,8 +14,8 @@ This will generate a CDK **TypeScript** project with an opinionated project stru
 - pre-configured lambda/layer integration (optional)
 - generate CDK outputs in `cdk-outputs.json` file
 
-Why not use the orininal [`caz`](https://github.com/zce/caz) tool ?  
-It cannnot install template dependencies; that's why we use the [`ozeebee/caz`](https://github.com/ozeebee/caz) fork.
+Why not use the original [`caz`](https://github.com/zce/caz) tool ?  
+It cannnot install template dependencies; that's why it's necessary to use the [`ozeebee/caz`](https://github.com/ozeebee/caz) fork (hoping this will be merged in the main codebase).
 
 ## Requirements
 
