@@ -21,7 +21,7 @@
     "test-remote-template": "rm -rf ./test-projects/remote-test && npx ozeebee/caz ozeebee/cdk-project-template ./test-projects/remote-test --tpldeps --debug"
   },
   "dependencies": {
-    "caz": "~0.8.1",
+    "caz": "0.8.2",
     "change-case": "^4.1.2",
     "lodash": "^4.17.21"
   },

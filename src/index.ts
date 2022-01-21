@@ -2,7 +2,7 @@
 // Make sure the following statement is executed before all code
 // module.paths = require.main!.paths // NOT COMPATIBLE WITH LOAD TEMPLATE DEPENDENCIES (@see https://github.com/ozeebee/caz/blob/main/README.md)
 
-import { Template } from './caz'
+import { Template } from 'caz'
 // import * as pkgjson from './package.json' // don't use this import with a `src/` folder (@see https://stackoverflow.com/questions/50822310/how-to-import-package-json-in-typescript)
 const pkgjson = require('../package.json')
 import chalk from 'chalk'
