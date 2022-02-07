@@ -44,7 +44,8 @@ export class <%= _.capitalize(_.camelCase(name)) %>Stack extends PrefixableStack
       entry: 'src/lambdas/sample-lambda.ts',
       handler: 'handler',
       runtime: Runtime.NODEJS_14_X,<% if (features.includes('lambdaLayer')) { %>
-      layers: [lambdaLayer],<% } %> 
+      layers: [lambdaLayer],<% } %>
+      role: sampleRole, 
       timeout: Duration.seconds(45),
       environment: {
         'MYENV_VAR': 'HelloLambda!'

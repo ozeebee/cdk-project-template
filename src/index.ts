@@ -35,7 +35,7 @@ const templateDef: Template = {
       name: 'cdkVersion',
       type: 'text',
       message: 'CDK version',
-      initial: '2.7.0'
+      initial: '2.10.0'
     },
     {
       name: 'features',
