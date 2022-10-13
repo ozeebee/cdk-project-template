@@ -17,8 +17,11 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
-    "test-create-project1": "rm -rf ./test-projects/test1 && npx ozeebee/caz . ./test-projects/test1 --tpldeps --debug",
-    "test-remote-template": "rm -rf ./test-projects/remote-test && npx ozeebee/caz ozeebee/cdk-project-template ./test-projects/remote-test --tpldeps --debug"
+    "test-create-project1": "rm -rf ./test-projects/test1 && npx zce/caz . ./test-projects/test1 --debug",
+    "test-remote-template": "rm -rf ./test-projects/remote-test && npx zce/caz ozeebee/cdk-project-template ./test-projects/remote-test --debug",
+    "ozb:test-create-project1": "rm -rf ./test-projects/test1 && npx ozeebee/caz . ./test-projects/test1 --tpldeps --debug",
+    "ozb:test-remote-template": "rm -rf ./test-projects/remote-test && npx ozeebee/caz ozeebee/cdk-project-template ./test-projects/remote-test --tpldeps --debug"
+
   },
   "dependencies": {
     "caz": "0.8.2",
@@ -32,6 +35,6 @@
     "@types/prompts": "2.0.14",
     "node-fetch": "^2.6.1",
     "prompts": "^2.4.1",
-    "typescript": "~4.5.3"
+    "typescript": "~4.8.4"
   }
 }

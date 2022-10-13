@@ -1,7 +1,7 @@
 cdk-project-template
 ====================
 
-An [`ozeebee/caz`](https://github.com/ozeebee/caz) (based on the original [`caz`](https://github.com/zce/caz)) template to scaffold / generate an [AWS CDK](https://docs.aws.amazon.com/cdk/v2/guide/home.html) application.
+A [`caz`](https://github.com/zce/caz) template to scaffold / generate an [AWS CDK](https://docs.aws.amazon.com/cdk/v2/guide/home.html) application.
 
 Tired of copy/pasting/modifying existing CDK projects (with all the inherent risks) ?
 
@@ -14,9 +14,6 @@ This will generate a CDK **TypeScript** project with an opinionated project stru
 - pre-configured lambda/layer integration (optional)
 - generate CDK outputs in `cdk-outputs.json` file
 
-Why not use the original [`caz`](https://github.com/zce/caz) tool ?  
-It cannnot install template dependencies; that's why it's necessary to use the [`ozeebee/caz`](https://github.com/ozeebee/caz) fork (hoping this will be merged in the main codebase).
-
 ## Requirements
 
 - Node.js (and npm)
@@ -24,7 +21,7 @@ It cannnot install template dependencies; that's why it's necessary to use the [
 ## Usage
 
 ```
-npx ozeebee/caz ozeebee/cdk-project-template [project-name] --tpldeps
+npx zce/caz ozeebee/cdk-project-template [project-name]
 ```
 
 Then follow the instructions ;)
@@ -36,4 +33,4 @@ Then follow the instructions ;)
 
 ## Built With
 
-[`ozeebee/caz`](https://github.com/ozeebee/caz) (a fork of [zce/caz](https://github.com/zce/caz)) - A simple yet powerful template-based Scaffolding tools
+[zce/caz](https://github.com/zce/caz) - A simple yet powerful template-based Scaffolding tools
