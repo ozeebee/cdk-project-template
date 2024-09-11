@@ -17,24 +17,23 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
-    "test-create-project1": "rm -rf ./test-projects/test1 && npx zce/caz . ./test-projects/test1 --debug",
-    "test-remote-template": "rm -rf ./test-projects/remote-test && npx zce/caz ozeebee/cdk-project-template ./test-projects/remote-test --debug",
+    "test-create-project1": "rm -rf ./test-projects/test1 && npx caz . ./test-projects/test1 --debug",
+    "test-remote-template": "rm -rf ./test-projects/remote-test && npx caz ozeebee/cdk-project-template ./test-projects/remote-test --debug",
     "ozb:test-create-project1": "rm -rf ./test-projects/test1 && npx ozeebee/caz . ./test-projects/test1 --tpldeps --debug",
     "ozb:test-remote-template": "rm -rf ./test-projects/remote-test && npx ozeebee/caz ozeebee/cdk-project-template ./test-projects/remote-test --tpldeps --debug"
 
   },
   "dependencies": {
-    "caz": "0.8.2",
+    "caz": "^2.0.0",
+    "chalk": "^4.1.2",
     "change-case": "^4.1.2",
-    "lodash": "^4.17.21"
-  },
-  "devDependencies": {
-    "@types/lodash": "4.14.172",
-    "@types/node": "^17.0.8",
-    "@types/node-fetch": "2.5.12",
-    "@types/prompts": "2.0.14",
-    "node-fetch": "^2.6.1",
+    "lodash": "^4.17.21",
+    "@types/node": "^20.16.5",
+    "@types/lodash": "4.17.7",
+    "@types/node-fetch": "2.6.11",
+    "@types/prompts": "2.4.9",
+    "node-fetch": "^3.3.2",
     "prompts": "^2.4.1",
-    "typescript": "~4.8.4"
+    "typescript": "~5.6.2"
   }
 }

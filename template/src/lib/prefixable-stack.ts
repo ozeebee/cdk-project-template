@@ -12,14 +12,14 @@ export class PrefixableStack extends Stack {
    * generate prefixed resource ID
    */
   resId(id: string) {
-    return `${this.prefix}${id}`
+    return `<%='$'%>{this.prefix}<%='$'%>{id}`
   }
 
   /**
    * generate prefixed (resource) name
    */
   resName(name: string) {
-    return `${this.prefix}-${name}`
+    return `<%='$'%>{this.prefix}-<%='$'%>{name}`
   }
 
   constructor(scope: Construct, id: string, props: PrefixableStackProps) {

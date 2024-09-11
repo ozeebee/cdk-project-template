@@ -61,18 +61,22 @@ const templateDef: Template = {
     },
   ],
   filters: {
-    '**/lambdas': answers => answers.features.includes('lambda') || answers.features.includes('lambdaLayer'),
+    '**/lambdas': (answers: any) => answers.features.includes('lambda') || answers.features.includes('lambdaLayer'),
     // 'lambdas/layer': answers => answers.features.includes('lambdaLayer'), !!! DOES NOT WORK (@see https://github.com/mrmlnc/fast-glob#how-to-exclude-directory-from-reading) !!!
-    '**/layer': answers => answers.features.includes('lambdaLayer'),
+    '**/layer': (answers: any) => answers.features.includes('lambdaLayer'),
   },
   setup: async ctx => {
-    ctx.answers.pname = paramCase(ctx.answers.name)
+    const answers = ctx.answers as Record<string, any>
+
+// console.log('** answers', answers)
+
+    ctx.answers.pname = paramCase(answers.name)
     ctx.answers.gitignore = '.gitignore'
-    const features: string[] = ctx.answers.features
+    const features: string[] = answers.features
     if (features.includes('lambdaLayer') && !features.includes('lambda'))
       features.push('lambda')
-    ctx.config.install = ctx.answers.install ? 'npm' : false
-    ctx.config.init = ctx.answers.git
+    ctx.config.install = answers.install ? 'npm' : false
+    ctx.config.init = answers.git
   },
   complete: async ctx => {
     // console.clear()
