@@ -21,7 +21,7 @@ This will generate a CDK **TypeScript** project with an opinionated project stru
 ## Usage
 
 ```
-npx zce/caz ozeebee/cdk-project-template [project-name]
+npx caz ozeebee/cdk-project-template [project-name]
 ```
 
 Then follow the instructions ;)
