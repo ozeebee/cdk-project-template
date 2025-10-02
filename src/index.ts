@@ -35,7 +35,13 @@ const templateDef: Template = {
       name: 'cdkVersion',
       type: 'text',
       message: 'CDK version',
-      initial: '2.157.0'
+      initial: '2.1029.4'
+    },
+    {
+      name: 'cdkLibVersion',
+      type: 'text',
+      message: 'CDK Library version',
+      initial: '2.219.0'
     },
     {
       name: 'features',

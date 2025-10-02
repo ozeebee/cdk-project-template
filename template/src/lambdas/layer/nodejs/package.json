@@ -12,6 +12,6 @@
     "@aws-sdk/client-sfn": "^3.30.0"
   },
   "devDependencies": {
-    "@types/node": "10.17.27"
+    "@types/node": "22.7.9"
   }
 }

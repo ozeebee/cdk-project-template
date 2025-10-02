@@ -36,14 +36,14 @@ export class <%= _.capitalize(_.camelCase(name)) %>Stack extends PrefixableStack
     const lambdaLayer = new LayerVersion(this, this.resId('SampleLambdaLayer'), {
       description: 'shared code for lambdas',
       code: Code.fromAsset('src/lambdas/layer'),
-      compatibleRuntimes: [ Runtime.NODEJS_14_X ]
+      compatibleRuntimes: [ Runtime.NODEJS_22_X ]
     })
     <% } %><% if (features.includes('lambda')) { %>
     const lambda = new NodejsFunction(this, this.resId('SampleLambda'), {
       functionName: this.resName('sample-lambda'),
       entry: 'src/lambdas/sample-lambda.ts',
       handler: 'handler',
-      runtime: Runtime.NODEJS_14_X,<% if (features.includes('lambdaLayer')) { %>
+      runtime: Runtime.NODEJS_22_X,<% if (features.includes('lambdaLayer')) { %>
       layers: [lambdaLayer],<% } %>
       role: sampleRole, 
       timeout: Duration.seconds(45),

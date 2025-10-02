@@ -17,16 +17,16 @@
   },
   "devDependencies": {
     "@types/jest": "^29.1.2",
-    "@types/node": "18.8.5",
+    "@types/node": "22.7.9",
     "@types/source-map-support": "^0.5.6",
     "aws-cdk": "<%= cdkVersion %>",
     "ts-node": "^10.9.1",
-    "typescript": "~5.6.2"<% if (features.includes('lambda')) { %>,
+    "typescript": "~5.9.3"<% if (features.includes('lambda')) { %>,
     "@types/aws-lambda": "^8.10.107",
-    "esbuild": "^0.23.1"<% } %>
+    "esbuild": "^0.25.10"<% } %>
   },
   "dependencies": {
-    "aws-cdk-lib": "<%= cdkVersion %>",<% if (features.includes('lambdaLayer')) { %>
+    "aws-cdk-lib": "<%= cdkLibVersion %>",<% if (features.includes('lambdaLayer')) { %>
     "@aws-sdk/client-sfn": "^3.186.0",<% } %>
     "constructs": "^10.1.130",
     "source-map-support": "^0.5.21"
